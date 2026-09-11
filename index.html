@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Gallery | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="background-glow"></div>
+
+  <header class="header">
+    <h1 class="title">Visual <span>My ARTWORKS</span></h1>
+    <p class="subtitle">Collection of ARTWORKS</p>
+  </header>
+
+  <main class="gallery-container">
+    <!-- Photo Item 1 -->
+    <div class="card" onclick="openLightbox(this)">
+      <div class="card-inner">
+        <img src="zeeee.png" alt="Portrait 1" loading="lazy">
+        <div class="card-overlay">
+          <span class="tag">ART</span>
+          <h3>Zenitsu</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo Item 2 -->
+    <div class="card" onclick="openLightbox(this)">
+      <div class="card-inner">
+        <img src="frogboy.png" alt="Portrait 2" loading="lazy">
+        <div class="card-overlay">
+          <span class="tag">ART</span>
+          <h3>frogboy</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo Item 3 -->
+    <div class="card" onclick="openLightbox(this)">
+      <div class="card-inner">
+        <img src="Froggirl.png" alt="Portrait 3" loading="lazy">
+        <div class="card-overlay">
+          <span class="tag">ART</span>
+          <h3>Froggirl</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo Item 4 -->
+    <div class="card" onclick="openLightbox(this)">
+      <div class="card-inner">
+        <img src="toram shesh.jpg" alt="Portrait 4" loading="lazy">
+        <div class="card-overlay">
+          <span class="tag">ART</span>
+          <h3>TORAM ONLINE</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo Item 5 -->
+    <div class="card" onclick="openLightbox(this)">
+      <div class="card-inner">
+        <img src="wantedd.png" alt="Portrait 5" loading="lazy">
+        <div class="card-overlay">
+          <span class="tag">ART</span>
+          <h3>Wanted</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo Item 6 -->
+    <div class="card" onclick="openLightbox(this)">
+      <div class="card-inner">
+        <img src="mob.png" alt="Portrait 6" loading="lazy">
+        <div class="card-overlay">
+          <span class="tag">ART</span>
+          <h3>Mob</h3>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close-btn">&times;</span>
+    <img id="lightbox-img" src="" alt="Enlarged portrait">
+    <div id="lightbox-caption" class="caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
